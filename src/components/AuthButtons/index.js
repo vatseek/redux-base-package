@@ -1,4 +1,4 @@
 import OAuthButton from './OAuthButton';
 import SignOutButton from './SignOutButton';
 
-export { OAuthButton, SignOutButton };
+export {OAuthButton, SignOutButton};

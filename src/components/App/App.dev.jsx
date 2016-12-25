@@ -1,22 +1,22 @@
-import React, { Component, PropTypes } from 'react';
+import React, {Component, PropTypes} from 'react';
 import AppProd from './App.prod';
 import DevTools from '../DevTools';
 
 const propTypes = {
-  children: PropTypes.node
+    children: PropTypes.node
 };
 
 class App extends Component {
-  render() {
-    return (
-      <AppProd>
-        <div>
-          {this.props.children}
-          <DevTools />
-        </div>
-      </AppProd>
-    );
-  }
+    render() {
+        return (
+            <AppProd>
+                <div>
+                    {this.props.children}
+                    <DevTools />
+                </div>
+            </AppProd>
+        );
+    }
 }
 
 App.propTypes = propTypes;
