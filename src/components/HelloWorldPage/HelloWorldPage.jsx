@@ -1,5 +1,5 @@
 import React, {PropTypes, Component} from 'react';
-import {OAuthButton, SignOutButton} from 'components/AuthButtons';
+import { Link } from 'react-router';
 
 import './HelloWorldPage.css';
 
@@ -59,9 +59,8 @@ class HelloWorldPage extends Component {
                     <div><input onChange={this.handleNameChange}/></div>
                     {this.renderGreetingWidget()}
                 </div>
-                <h2>Авторизация</h2>
-                <OAuthButton provider='github'/>
-                <SignOutButton />
+                <h2>Авторизация:</h2>
+                <Link to="counters">Home</Link>
             </div>
         );
     }
